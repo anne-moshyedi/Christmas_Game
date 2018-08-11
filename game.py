@@ -6,27 +6,27 @@ camera = gamebox.Camera(900,600)
 agreed = False
 
 # images
-sky_img = gamebox.from_image(500,160,"santa_sky.png")
-santa = gamebox.from_image(200,200,"santa8_resized_converted.png")
-grinch = gamebox.from_image(500,500,"grinch.png")
-JackFrost = gamebox.from_image(820,50,"JackFrost.png")
+sky_img = gamebox.from_image(500,160,"images/santa_sky.png")
+santa = gamebox.from_image(200,200,"images/santa8_resized_converted.png")
+grinch = gamebox.from_image(500,500,"images/grinch.png")
+JackFrost = gamebox.from_image(820,50,"images/JackFrost.png")
 santa.yspeed = 0
 JackFrost.yspeed = 10
 top_border = gamebox.from_color(-100,1, "black", 3000, 2)
 ground = gamebox.from_color(-100, 600, "black", 3000, 20)
-background_music = gamebox.load_sound("Grinch.wav")
+background_music = gamebox.load_sound("sound_effects/Grinch.wav")
 
 # items
 coins = [
-    gamebox.from_image(random.randint(10,750), -10, "present1_converted.png"),
-    gamebox.from_image(random.randint(10, 750), -18, "present1_converted.png"),
-    gamebox.from_image(random.randint(10, 750), -15, "present1_converted.png"),
-    gamebox.from_image(random.randint(10, 750), -30, "present1_converted.png")
+    gamebox.from_image(random.randint(10,750), -10, "images/present1_converted.png"),
+    gamebox.from_image(random.randint(10, 750), -18, "images/present1_converted.png"),
+    gamebox.from_image(random.randint(10, 750), -15, "images/present1_converted.png"),
+    gamebox.from_image(random.randint(10, 750), -30, "images/present1_converted.png")
 ]
 cookies = [
-    gamebox.from_image(random.randint(10,750), -40, "cookie1_converted.png"),
-    gamebox.from_image(random.randint(10,750), -35, "cookie1_converted.png"),
-    gamebox.from_image(random.randint(10,750), -32, "cookie1_converted.png"),
+    gamebox.from_image(random.randint(10,750), -40, "images/cookie1_converted.png"),
+    gamebox.from_image(random.randint(10,750), -35, "images/cookie1_converted.png"),
+    gamebox.from_image(random.randint(10,750), -32, "images/cookie1_converted.png"),
 ]
 fire = []
 
